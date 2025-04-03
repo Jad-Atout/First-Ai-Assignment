@@ -48,9 +48,6 @@ def is_goal(state, start_letter):
     return find_knight_path(state_dict, start_position, {start_position})
 
 
-# ---------------------------------------
-# 3) توليد الحالات اللاحقة (Successors)
-# ---------------------------------------
 
 def get_new_states(current_state):
 
@@ -83,7 +80,6 @@ def get_new_states(current_state):
                     possible_states.append((new_state_tuple, move_description))
 
     return possible_states
-
 
 
 
